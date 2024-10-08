@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +32,6 @@ const Header = () => {
                 <li className="nav-item"><Link className="nav-link text-white py-2" to="/quizzes">Quizzes</Link></li>
                 <li className="nav-item"><Link className="nav-link text-white py-2" to="/contact">Contact</Link></li>
           </ul>
-          {/* <ThemeToggle /> */}
         </div>
       </div>
     </nav>

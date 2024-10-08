@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Home from './Home';
 import About from './About';
 import Flashcards from './Flashcards';
+import Lessons from './Lessons';
 
 
 import './App.css'; // Import your main CSS file
@@ -20,6 +21,7 @@ function App() {
               <Route path="/"  element={<Home/>} />
               <Route path="/about" element={<About/>} />
               <Route path="/flash-cards" element={<Flashcards/>} />
+              <Route path="/lessons" element={<Lessons/>} />
               {/* <Route path="/contact" component={ContactPage} /> */}
             </Routes>
           </div>
