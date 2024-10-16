@@ -5,6 +5,7 @@ import Footer from './Footer';
 import Home from './Home';
 import About from './About';
 import Flashcards from './Flashcards';
+import Lessons2 from './Lessons2';
 import Lessons from './Lessons';
 
 
@@ -21,6 +22,7 @@ function App() {
               <Route path="/"  element={<Home/>} />
               <Route path="/about" element={<About/>} />
               <Route path="/flash-cards" element={<Flashcards/>} />
+              <Route path="/lessons2" element={<Lessons2/>} />
               <Route path="/lessons" element={<Lessons/>} />
               {/* <Route path="/contact" component={ContactPage} /> */}
             </Routes>
@@ -29,7 +31,7 @@ function App() {
       </Router>
       
     </div>
-  );
-}
+  )
+};
 
-export default App;
+export default App; //specify the main component in the file
