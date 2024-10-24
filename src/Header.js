@@ -9,9 +9,9 @@ const Header = () => {
       };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav className="navbar navbar-expand-lg navbar-light bg-warning mb-5">
       <div className="container">
-        <a className="navbar-brand" href="#">AWS Practitioner Prep</a>
+        <a className="navbar-brand" href="/">AWS Practitioner Prep</a>
         <button 
           className="navbar-toggler" 
           type="button" 

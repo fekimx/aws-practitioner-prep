@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './style-lessons.css';
 
 const CollapsibleSection = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,10 +8,10 @@ const CollapsibleSection = ({ title, children }) => {
 
   return (
     <div>
-      <h2 onClick={toggle} style={{ cursor: 'pointer' }}>
-        {title} {isOpen ? '▲' : '▼'}
+      <h2  className="font-weight-bold" onClick={toggle} style={{ cursor: 'pointer' }}>
+        {title} {isOpen ? '-' : '+'}
       </h2>
-      {isOpen && <div>{children}</div>}
+      {isOpen && <div className="mb-4">{children}</div>}
     </div>
   );
 };
