@@ -14,10 +14,10 @@ import './App.css'; // Import your main CSS file
 
 function App() {
   return (
-    <div className="App">
+    <div className="App d-flex flex-column min-vh-100">
       <Router>
         <Header />
-          <div className="container">
+          <div className="container flex-fill">
             <Routes>
               <Route path="/"  element={<Home/>} />
               <Route path="/about" element={<About/>} />

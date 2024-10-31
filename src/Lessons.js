@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './style-lessons.css';
+import './style-lessons.module.css';
 
 const CollapsibleSection = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);

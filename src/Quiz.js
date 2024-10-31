@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import './style-quizzes.css';
+import './style-quizzes.module.css';
 
 
 const Quiz = () => {
@@ -38,7 +38,7 @@ const Quiz = () => {
 
   return (
     <div>
-      <button onClick={fetchQuestions} className="btn btn-primary">Quiz Me</button>
+      <button onClick={fetchQuestions} className="btn btn-dark rounded-pill py-2 px-4">Quiz Me</button>
       {questions.length > 0 && (
         <form onSubmit={handleSubmit}>
           {questions.map((question, questionIndex) => (
@@ -69,7 +69,7 @@ const Quiz = () => {
               ))}
             </div>
           ))}
-          <button type="submit" className="btn btn-primary">Submit Answers</button>
+          <button type="submit" className="btn btn-dark rounded-pill py-2 px-4">Submit Answers</button>
         </form>
       )}
     </div>
