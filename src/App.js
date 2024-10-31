@@ -7,7 +7,7 @@ import About from './About';
 import Flashcards from './Flashcards';
 import Lessons2 from './Lessons2';
 import Lessons from './Lessons';
-
+import Quiz from './Quiz'
 
 import './App.css'; // Import your main CSS file
 
@@ -22,9 +22,9 @@ function App() {
               <Route path="/"  element={<Home/>} />
               <Route path="/about" element={<About/>} />
               <Route path="/flash-cards" element={<Flashcards/>} />
-              <Route path="/lessons2" element={<Lessons2/>} />
+              {/* <Route path="/lessons2" element={<Lessons2/>} /> */}
               <Route path="/lessons" element={<Lessons/>} />
-              {/* <Route path="/contact" component={ContactPage} /> */}
+              <Route path="/quiz" element={<Quiz/>} />
             </Routes>
           </div>
         <Footer />

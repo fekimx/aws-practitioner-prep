@@ -29,7 +29,7 @@ const Header = () => {
                 <li className="nav-item"><Link className="nav-link text-white py-2" to="/about">About</Link></li>
                 <li className="nav-item"><Link className="nav-link text-white py-2" to="/lessons">Lessons</Link></li>
                 <li className="nav-item"><Link className="nav-link text-white py-2" to="/flash-cards">Flash Cards</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white py-2" to="/quizzes">Quizzes</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white py-2" to="/quiz">Quizzes</Link></li>
                 <li className="nav-item"><Link className="nav-link text-white py-2" to="/contact">Contact</Link></li>
           </ul>
         </div>

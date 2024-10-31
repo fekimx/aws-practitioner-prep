@@ -123,5 +123,5 @@ const main = async () => {
 main().catch(console.error);
 
 app.listen(PORT, () => {
-  console.log(`Server is running`);
+  console.log(`Server is running on http://localhost:${PORT}`);
 }); 
