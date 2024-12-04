@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
-import About from './About';
+import Exam from './Exam';
 import Flashcards from './Flashcards';
 import Lessons2 from './Lessons2';
 import Lessons from './Lessons';
@@ -20,7 +20,7 @@ function App() {
           <div className="container flex-fill">
             <Routes>
               <Route path="/"  element={<Home/>} />
-              <Route path="/about" element={<About/>} />
+              <Route path="/exam" element={<Exam/>} />
               <Route path="/flash-cards" element={<Flashcards/>} />
               {/* <Route path="/lessons2" element={<Lessons2/>} /> */}
               <Route path="/lessons" element={<Lessons/>} />
@@ -29,7 +29,6 @@ function App() {
           </div>
         <Footer />
       </Router>
-      
     </div>
   )
 };

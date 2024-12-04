@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './style-lessons.module.css';
+import './style-lessons.css';
 
 const CollapsibleSection = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +52,8 @@ const Lessons = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container row col-md-8" style={{ margin: 'auto', textAlign:'justify' }}>
+      <p>Welcome to the comprehensive lessons hub! Here, I share my detailed notes with you! You’ll find the table of contents designed to help you navigate through your study materials effortlessly. I suggest you expand each heading and make sure you know all of the content as it may appear on the exam.</p>
       {htmlContent.map((section, index) => (
         <CollapsibleSection key={index} title={section.title}>
           <div dangerouslySetInnerHTML={{ __html: section.content }} />

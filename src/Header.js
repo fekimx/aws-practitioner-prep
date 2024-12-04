@@ -9,7 +9,7 @@ const Header = () => {
       };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-warning mb-5">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-warning mb-5 py-4">
       <div className="container">
         <a className="navbar-brand" href="/">AWS Practitioner Prep</a>
         <button 
@@ -25,12 +25,12 @@ const Header = () => {
         <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
             {/* <ul className={`navbar-nav ms-auto position-absolute`} style={{ top: '10px', right: '0', zIndex: 1000 }}> */}
             <ul className="navbar-nav ms-auto">
-                <li className="nav-item"><Link className="nav-link text-white py-2" to="/">Home</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white py-2" to="/about">About</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white py-2" to="/lessons">Lessons</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white py-2" to="/flash-cards">Flash Cards</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white py-2" to="/quiz">Quizzes</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white py-2" to="/contact">Contact</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white py-2" style={{ fontSize: '1.125rem' }} to="/">Home</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white py-2" style={{ fontSize: '1.125rem' }} to="/exam">About Exam</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white py-2" style={{ fontSize: '1.125rem' }} to="/lessons">Lessons</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white py-2" style={{ fontSize: '1.125rem' }} to="/flash-cards">Flash Cards</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white py-2" style={{ fontSize: '1.125rem' }} to="/quiz">Quizzes</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white py-2" style={{ fontSize: '1.125rem' }} to="/contact">Contact</Link></li>
           </ul>
         </div>
       </div>

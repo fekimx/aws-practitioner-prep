@@ -3515,9 +3515,9 @@ table th {
 }
 
 .c12 {
-    padding-top: 12pt;
-    padding-bottom: 6pt;
-    line-height: 1.5;
+    padding-top: 2pt;
+    padding-bottom: 2pt;
+    line-height: 1;
     page-break-after: avoid;
     orphans: 2;
     widows: 2;
@@ -3559,7 +3559,7 @@ table th {
     font-weight: 400;
     text-decoration: none;
     vertical-align: baseline;
-    font-size: 16pt;
+    font-size: 18pt;
     font-family: "Arial";
     font-style: normal
 }
@@ -3779,7 +3779,7 @@ li {
     font-family: "Arial"
 }
 
-p {
+p { /* this doesn't apply. the one in style-quizzes.module applies. */
     margin: 0;
     color: #000000;
     font-size: 11pt;
@@ -3805,13 +3805,15 @@ h2 {
         .h2, h2 {
             font-size: calc(1.325rem + .9vw);
         }*/
-    padding-bottom: 6pt;
+    padding-bottom: 1pt;
+    margin-bottom: 0;
     font-family: "Arial";
-    line-height: 1.5;
+    line-height: 1;
     page-break-after: avoid;
     orphans: 2;
     widows: 2;
-    text-align: left
+    text-align: left;
+    font-weight: 600 !important;
 }
 
 h3 {

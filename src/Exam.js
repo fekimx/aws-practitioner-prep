@@ -2,16 +2,26 @@ import React from 'react';
 
 const Exam = () => {
   return (
-    <div className="container">
-      <header className="mb-4">
-        <h3>Why this site?</h3>
-        <p>
-          Even people with a strong CS background and use AWS in their daily job may struggle in the exam because it covers a broad range of topics, you may . When I came back to update my knowledge and get certified, I noticed how much even the Cloud Practitioner exam covers and immediately felt it was too much to take in. It is not a difficult exam, but the material that's covered is really broad, and you need to know well over 130 services and tools, pricing, and more.
-        </p>
-      </header>
+    <div className="container row col-md-8" style={{ margin: 'auto', textAlign:'justify' }}>
+      <p>First, let's learn about the exam structure & key concepts!</p>
+      <section className="mb-4">
+        <h3>Structure of the exam:</h3>
+        <ul>
+            <li>The exam is a mixture of 65 multiple choice and multiple response questions. 50/65 affect your score while 15/65 are unscored. But you won't know which ones are scored or unscored.</li>
+            <li>The exam is 90 minutes. In my opinion, it is a plenty of time.</li>
+            <li>You need to get 700/1000 at minimum in order to pass the exam. However, it is pass/fail meaning you won't see your score after completing the exam but you will immediately see whether you passed or not.</li>
+            <li>There are 4 domains in the current version (CLF-C02) of the exam.</li>
+                <ol>
+                    <li>Cloud Concepts (24% of scored content)</li>
+                    <li>Security and Compliance (30% of scored content)</li>
+                    <li>Cloud Technology and Services (34% of scored content)</li>
+                    <li>Billing, Pricing, and Support (12% of scored content)</li>
+                </ol>
+        </ul>
+      </section>
 
       <section className="mb-4">
-        <h3>Key concepts:</h3>
+        <h3>Key concepts to know:</h3>
         <ul>
             <li>Explain the advantages of the AWS Cloud.</li>
             <li>Understand and explain the AWS shared responsibility model.</li>
@@ -23,20 +33,10 @@ const Exam = () => {
       </section>
 
       <section className="mb-4">
-        <h3>Quick Facts:</h3>
-        <p> </p>
-        <ul>
-            <li>The exam is a mixture of 65 multiple choice and multiple response questions. 50/65 affect your score while 15/65 are unscored. But you won't know which ones are scored or unscored.</li>
-            <li>The exam is 90 minutes. In my opinion, it is a plenty of time.</li>
-            <li>You need to get 700/1000 at minimum in order to pass the exam. However, it is pass/fail meaning you won't see your score after completing the exam.</li>
-            <li>There are 4 domains in the current version (CLF-C02) of the exam.</li>
-                <ol>
-                    <li>Cloud Concepts (24% of scored content)</li>
-                    <li>Security and Compliance (30% of scored content)</li>
-                    <li>Cloud Technology and Services (34% of scored content)</li>
-                    <li>Billing, Pricing, and Support (12% of scored content)</li>
-                </ol>
-        </ul>
+        <h3>What are the prerequisites?</h3>
+        <p>
+          There are no formal prerequisites for the AWS Cloud Practitioner exam! However, having a basic understanding of cloud computing concepts and some familiarity with IT terminology are surely beneficial. But don’t feel discouraged if this doesn’t sound like you! Just get started and you will get there with enough study and practice!
+        </p>
       </section>
 
     </div>
