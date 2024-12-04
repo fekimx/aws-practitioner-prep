@@ -71,16 +71,14 @@ function generateQuestions() {
   while (selectedQuestions.length < 7) {
       const randomIndex = Math.floor(Math.random() * questionsData.length);
       const question = questionsData[randomIndex]; 
-      
-      // Shuffle choices and store the correct answer index
+
+      //store the original answer before shuffling
       const correctAnswerIndex = question.answer;
       original_answer = question.choices[correctAnswerIndex];//answer id of the original question
+      
       shuffleArray(question.choices);
-      console.log(question.answer)
-      console.log(question)
       // Find the new index of the correct answer after shuffle
       question.answer = question.choices.indexOf(original_answer);
-      console.log(question.answer)
       
       selectedQuestions.push(question);
   }
