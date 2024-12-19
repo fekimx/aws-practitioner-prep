@@ -5,24 +5,24 @@ This project is a website designed to help users learn AWS Cloud Practitioner co
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Features
-
-📚 Learn AWS Concepts: Explore key concepts related to the AWS Cloud Practitioner exam.
-📝 Quiz Yourself: Take quizzes to reinforce your understanding.
-📊 Dynamic and Static Questions: Questions are sourced from a JSON file and a PostgreSQL database for a mix of static and dynamic content.
-⚛️ React-Based: Built with React for a responsive and modern user experience.
+  
+📚 Learn AWS Concepts: Explore key concepts related to the AWS Cloud Practitioner exam.  
+📝 Quiz Yourself: Take quizzes to reinforce your understanding.  
+📊 Dynamic and Static Questions: Questions are sourced from a JSON file and a PostgreSQL database for a mix of static and dynamic content.  
+⚛️ React-Based: Built with React for a responsive and modern user experience.  
 
 ## Getting Started
 
 Follow these steps to run the project locally on your machine.
 
 ### Prerequisites
-Node.js and npm installed.
-PostgreSQL installed and configured.
-A `.env` file with the necessary database connection details.
+Node.js and npm installed.  
+PostgreSQL installed and configured.  
+A `.env` file with the necessary database connection details.  
 
 ### Installation
-Clone the Repository
-`git clone https://github.com/fekimx/aws-practitioner-prep.git
+Clone the Repository  
+`git clone https://github.com/fekimx/aws-practitioner-prep.git  
 cd aws-practitioner-prep`
 
 ### Install Dependencies
@@ -31,10 +31,10 @@ cd aws-practitioner-prep`
 ### Set Up Environment Variables
 Create a `.env` file in the root directory with your PostgreSQL credentials:
 
-`REACT_APP_DB_HOST=your-db-host
-REACT_APP_DB_USER=your-db-user
-REACT_APP_DB_PASSWORD=your-db-password
-REACT_APP_DB_NAME=your-db-name`
+`REACT_APP_DB_HOST=your-db-host  
+REACT_APP_DB_USER=your-db-user  
+REACT_APP_DB_PASSWORD=your-db-password  
+REACT_APP_DB_NAME=your-db-name`  
 
 ### Run the Application
 `npm start`
