@@ -1,13 +1,32 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
-      };
+    };
 
+    const navLinks = [
+      { to: "/", label: "Home" },
+      { to: "/exam", label: "About Exam" },
+      { to: "/lessons", label: "Lessons" },
+      { to: "/quiz", label: "Quizzes" },
+      { to: "/contact", label: "Contact" },
+    ];
+    const NavItem = ({ to, label }) => {
+      const isActive = location.pathname === to;
+      return (
+        <li className="nav-item">
+          <Link className={`nav-link py-2 ${isActive ? 'text-secondary' : 'text-white'}`} style={{ fontSize: '1.125rem' }} to={to}>
+            {label}
+          </Link>
+        </li>
+      )
+    };
+      
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-warning mb-5 py-4">
       <div className="container">
@@ -25,13 +44,10 @@ const Header = () => {
         <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`} id="navbarNav">
             {/* <ul className={`navbar-nav ms-auto position-absolute`} style={{ top: '10px', right: '0', zIndex: 1000 }}> */}
             <ul className="navbar-nav ms-auto">
-                <li className="nav-item"><Link className="nav-link text-white py-2" style={{ fontSize: '1.125rem' }} to="/">Home</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white py-2" style={{ fontSize: '1.125rem' }} to="/exam">About Exam</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white py-2" style={{ fontSize: '1.125rem' }} to="/lessons">Lessons</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white py-2" style={{ fontSize: '1.125rem' }} to="/flash-cards">Flash Cards</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white py-2" style={{ fontSize: '1.125rem' }} to="/quiz">Quizzes</Link></li>
-                <li className="nav-item"><Link className="nav-link text-white py-2" style={{ fontSize: '1.125rem' }} to="/contact">Contact</Link></li>
-          </ul>
+              {navLinks.map(link => (
+                <NavItem key={link.to} to={link.to} label={link.label} />
+              ))}
+            </ul>
         </div>
       </div>
     </nav>

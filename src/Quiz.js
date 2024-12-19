@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './style-quizzes.module.css';
 
@@ -55,10 +55,11 @@ const Quiz = () => {
 
   return (
     <div className="container row col-md-8" style={{ margin: 'auto', textAlign:'justify' }}>
-      <p>When you hit the "Quiz Me" button below, the questions will be generated randomly. Here you can test your AWS knowledge!</p>
+      <p>When you click the 'Quiz Me' button below, 15 random questions will be generated for you. Once you're ready, hit the 'Submit' button to see the correct answers. Ready to click?👇</p>
       <div className="text-center my-3">
         <button onClick={fetchQuestions} className="btn btn-dark rounded-pill py-2 px-4" >Quiz Me</button>
       </div>
+      
       {questions.length > 0 && (
         <form onSubmit={handleSubmit}>
           {questions.map((question, questionIndex) => (
@@ -93,8 +94,16 @@ const Quiz = () => {
           <div className="text-center my-3">
             <button type="submit" className="btn btn-dark rounded-pill py-2 px-4" disabled={isSubmitted}>Submit Answers</button>
           </div>
+          
         </form>
+        
       )}
+      {/* Keep this outside the form in order to make it work properly. Otherwise, the Submit button and choices stay disabled even though it generates new questions. */}
+      {isSubmitted &&
+        <div className="text-center my-3">
+          <button onClick={fetchQuestions} className="btn btn-dark rounded-pill py-2 px-4" >Quiz Me Again</button>
+        </div>
+      }
     </div>
   );
 };

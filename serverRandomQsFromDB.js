@@ -67,11 +67,15 @@ function shuffleArray(array) {
 function generateQuestions() {
   const questionsData = JSON.parse(fs.readFileSync(path.join(__dirname, 'public', 'questions.json'), 'utf-8'));
   const selectedQuestions = [];
+  const seenIds = new Set();
   // Select 7 unique questions
   while (selectedQuestions.length < 7) {
       const randomIndex = Math.floor(Math.random() * questionsData.length);
       const question = questionsData[randomIndex]; 
-
+      if (seenIds.has(question.question)){
+        continue;
+      }
+      seenIds.add(question.question);
       //store the original answer before shuffling
       const correctAnswerIndex = question.answer;
       original_answer = question.choices[correctAnswerIndex];//answer id of the original question
