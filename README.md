@@ -31,8 +31,8 @@ cd aws-practitioner-prep`
 ### Set Up Environment Variables
 Create a `.env` file in the root directory with your PostgreSQL credentials:  
 `
-REACT_APP_DB_HOST=your-db-host \n
-REACT_APP_DB_USER=your-db-user <br/>
+REACT_APP_DB_HOST=your-db-host 
+REACT_APP_DB_USER=your-db-user 
 REACT_APP_DB_PASSWORD=your-db-password  
 REACT_APP_DB_NAME=your-db-name
 `
