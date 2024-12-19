@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 📚 Learn AWS Concepts: Explore key concepts related to the AWS Cloud Practitioner exam.  
 📝 Quiz Yourself: Take quizzes to reinforce your understanding.  
 📊 Dynamic and Static Questions: Questions are sourced from a JSON file and a PostgreSQL database for a mix of static and dynamic content.  
-⚛️ React-Based: Built with React for a responsive and modern user experience.  
+⚛️ React-Based: Built with React and Bootstrap for a responsive and modern user experience.  
 
 ## Getting Started
 
